@@ -1,0 +1,129 @@
+html, body {
+	height: 100%;
+	min-height: 600px;
+	background: #333;
+}
+a, body {
+	font-family: "Segoe UI", Segoe, Tahoma, Arial, Verdana, sans-serif;
+	font-size: small;
+}
+.wrapper {
+  position: relative;
+	max-width: 1366px;
+	min-width: 1000px;
+	height: auto !important;  /*ие6 в следствии своей безумности переписывает «нижним значением» «важное значение»*/
+	height: 100%;
+	min-height: 100%;
+	margin: 0 auto;
+	background: url("../img/SEMLadyBird_ROW14126852037_1366x768.jpg") no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.header {
+	height: 44px;
+	line-height: 44px;
+	vertical-align: middle;
+	background: #333;
+}
+.menu {
+	margin-left: 31px;
+
+}
+.menu__link {
+	display: inline-block;
+	padding: 0 16.5px;
+	text-align: center;
+}
+.menu__link:hover {
+	color: #fff;
+}
+.menu__link--active {
+	color: #0c8484;
+}
+.menu__link--inactive {
+	color: #acacac;
+}
+.menu__delimeter {
+	display: inline-block;
+	width: 25px;
+	text-align: center;
+	color: #acacac;
+}
+.empty_inner {
+  height:20px;
+}
+
+/* SEARCH */
+.search {
+	height: 52px;
+	margin-top: 135px;
+	margin-left: 110px;
+}
+.search__logo {
+	float: left;
+	width: 126px;
+	height: 52px;
+	background: url("../img/logo.png");
+}
+.search__input {
+	float: left;
+	width: 500px;
+	height: 46px;
+	padding-left: 7px;
+	margin-top: 3px;
+	margin-left: 30px;
+	font-size: 18px;
+	outline: none;
+}
+.search__btn {
+	float: left;
+	width: 44px;
+	height: 46px;
+	margin-top: 3px;
+	background: #0C8484;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 64px;
+	cursor: pointer;
+}
+
+/* FOOTER */
+.footer {
+	position: relative;
+	height: 50px;
+	width: 100%;
+	margin-top: -50px;
+	line-height: 50px;
+	vertical-align: middle;
+	text-align: right;
+	background: #333;
+}
+.menu--footer {
+	max-width: 1366px;
+	min-width: 1000px;
+	padding-right: 20px;
+	margin: 0 auto;
+}
+.menu__link--footer {
+	padding: 0;
+	color: #666;
+	white-space: nowrap;
+}
+.menu__link--footer a {
+	margin: 0 10px;
+	color: #666;
+	font-weight: 400;
+}
+.menu__link--footer span {
+	margin: 0 10px;
+	font-weight: 400;
+}
+.menu__link--footer:hover {
+	color: #666;
+}
+.menu__link--footer a:hover {
+	color: #666;
+	text-decoration: underline;
+}

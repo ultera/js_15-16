@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bing</title>
+  <link rel="stylesheet" href="css/request.css">
+  <script src="js/jquery-1.12.3.min.js"></script>
+  <script src="js/jquery.tmpl.min.js"></script>
+  <script src="js/request.js"></script>
+</head>
+<body>
+  <a href="index.html"><div class="logo"></div></a>
+  <div class="search">
+    <input class="search__input" title="Введите слово для поиска" type="search" value="" maxlength="1000">
+    <div class="search__btn">
+      <img class="search__img" src="img/search-request.png" alt="">
+    </div>
+  </div>
+  <script type="text/template" id="tmpl">
+    <div class="domen">
+      <a  class="title" href=${url}><p>{{html title}}</p></a>
+      <p class="url">{{html url}}</p>
+      <p class="description">{{html description}}</p>
+    </div>
+  </script>
+  <div class="content">
+  </div>
+</body>
+</html>
