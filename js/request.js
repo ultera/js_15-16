@@ -3,16 +3,24 @@
 $(function() {
 
   var searchStr = localStorage.getItem("js1516searchstr");
-  var searchInput = $(".search__input").val(searchStr);
+  var $searchInput = $(".search__input").val(searchStr);
+  var $searchBtn = $(".search__btn");
 
   doSearch(searchStr);
 
-  $(".search__btn").on("click", function() {
-    var searchStr = $(".search__input").val();
+  $searchBtn.on("click", function() {
+    var searchStr = $searchInput.val();
     if (!searchStr) {return;}
 
     doSearch(searchStr);
   });
+
+  $searchInput.keypress(function(e) {
+    if(e.which == 13) {
+      $searchBtn.click();
+    }
+  });
+
 });
 
 function doSearch(searchStr) {
@@ -49,6 +57,8 @@ function doSearch(searchStr) {
         ]
         $("#tmpl").tmpl(arr).appendTo($content);
       });
+
+      // $("#output").html(ul);
     }
   });
 }
